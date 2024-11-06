@@ -1,0 +1,88 @@
+main {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+main {
+    max-width: 1440px;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "A B C D E";
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1166px) {
+    .grid {
+        grid-template-areas: "A B C D" "E E E E";
+    }
+}
+
+@media (max-width: 931px) {
+    .grid {
+        grid-template-areas: "A A B B C C" "D D D E E E";
+    }
+}
+
+@media (max-width: 717px) {
+    .grid {
+        grid-template-areas: "A B" "C D" "E E";
+    }
+}
+
+@media (max-width: 484px) {
+    .grid {
+        grid-template-areas: "A" "B" "C" "D" "E";
+    }
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-1 {
+    grid-area: A;
+}
+
+.card-2 {
+    grid-area: B;
+}
+
+.card-3 {
+    grid-area: C;
+}
+
+.card-4 {
+    grid-area: D;
+}
+
+.card-5 {
+    grid-area: E;
+}
+
+.content {
+    white-space: nowrap;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.flex .card {
+    flex: 1;
+}
