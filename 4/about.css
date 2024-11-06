@@ -1,0 +1,346 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+}
+
+img,
+audio,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+audio,
+canvas,
+iframe,
+video,
+img,
+svg {
+  vertical-align: middle;
+}
+
+iframe {
+  border: 0;
+}
+
+textarea {
+  resize: none; /*remove the resize handle on the bottom right*/
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+  border: none;
+  font-size: 100%;
+  margin: 0;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+.clear {
+  clear: both;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+html,
+body,
+img,
+div,
+a,
+table {
+  image-rendering: -webkit-optimize-contrast !important;
+}
+
+sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub {
+  vertical-align: baseline;
+  position: relative;
+  bottom: -0.4em;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.about {
+  padding: 30px;
+}
+@media (max-width: 468px) {
+  .about {
+    padding: 10px;
+  }
+}
+.about__container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1440px;
+}
+.about__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media (max-width: 468px) {
+  .about__title {
+    margin-bottom: 10px;
+  }
+}
+.about__line {
+  width: 10%;
+  height: 3px;
+  background-color: rgb(2, 0, 0);
+  margin-bottom: 30px;
+}
+@media (max-width: 468px) {
+  .about__line {
+    margin-bottom: 10px;
+  }
+}
+.about__credo {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  color: #9b9b9b;
+  max-width: 1100px;
+}
+@media (max-width: 468px) {
+  .about__credo {
+    padding-bottom: 10px;
+  }
+}
+.about__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media (max-width: 468px) {
+  .about__cards {
+    gap: 10px;
+  }
+}
+.about__card {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.about__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 1px solid rgba(220, 233, 244, 0.8352941176);
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+@media (max-width: 468px) {
+  .about__img {
+    margin-bottom: 20px;
+  }
+}
+.about__card-title {
+  font-size: 20px;
+  margin-bottom: 40px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+@media (max-width: 468px) {
+  .about__card-title {
+    white-space: normal;
+    margin-bottom: 20px;
+  }
+}
+.about__card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: rgb(2, 0, 0);
+}
+@media (max-width: 468px) {
+  .about__card-text {
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */
