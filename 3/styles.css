@@ -14,7 +14,7 @@ main {
     max-width: 1440px;
 }
 
-.grid {
+.container-grid {
     display: grid;
     grid-template-areas: "A B C D E";
     gap: 20px;
@@ -22,25 +22,25 @@ main {
 }
 
 @media (max-width: 1166px) {
-    .grid {
+    .container-grid {
         grid-template-areas: "A B C D" "E E E E";
     }
 }
 
 @media (max-width: 931px) {
-    .grid {
+    .container-grid {
         grid-template-areas: "A A B B C C" "D D D E E E";
     }
 }
 
 @media (max-width: 717px) {
-    .grid {
+    .container-grid {
         grid-template-areas: "A B" "C D" "E E";
     }
 }
 
 @media (max-width: 484px) {
-    .grid {
+    .container-grid {
         grid-template-areas: "A" "B" "C" "D" "E";
     }
 }
@@ -76,13 +76,13 @@ main {
     white-space: nowrap;
 }
 
-.flex {
+.container-flex {
     display: flex;
     gap: 20px;
     padding-bottom: 20px;
     flex-wrap: wrap;
 }
 
-.flex .card {
+.container-flex .card {
     flex: 1;
 }
