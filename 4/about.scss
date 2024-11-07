@@ -54,7 +54,6 @@
 
     &__cards {
         @include flex-wrap;
-        gap: 30px;
 
         @include for-mobile {
             gap: 10px;
@@ -66,7 +65,44 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-		padding-top: 20px;
+        padding: 20px;
+        position: relative;
+
+        &:nth-child(2)::after,
+        &:nth-child(3)::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: calc(50% - $wCircle);
+            height: 1px;
+            background-color: $blue;
+
+            @include for-mobile {
+                top: 50px;
+            }
+        }
+
+        &:nth-child(1)::before,
+        &:nth-child(2)::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: calc(50% - $wCircle);
+            height: 1px;
+            background-color: $blue;
+
+            @include for-mobile {
+                top: 50px;
+            }
+        }
+
+        @include for-mobile {
+            padding: 10px;
+        }
     }
 
     &__img {
@@ -78,7 +114,6 @@
         border: $border;
         width: 80px;
         height: 80px;
-		position: relative;
 
         @include for-mobile {
             margin-bottom: 20px;
@@ -100,7 +135,6 @@
 
     &__card-text {
         font-size: 16px;
-        line-height: 1.5;
         margin-bottom: 30px;
         color: $black;
 

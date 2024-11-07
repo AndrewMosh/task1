@@ -288,7 +288,6 @@ input[type=submit] {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
 }
 @media (max-width: 468px) {
   .about__cards {
@@ -300,7 +299,43 @@ input[type=submit] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  padding: 20px;
+  position: relative;
+}
+.about__card:nth-child(2)::after, .about__card:nth-child(3)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: calc(50% - 60px);
+  height: 1px;
+  background-color: rgba(220, 233, 244, 0.8352941176);
+}
+@media (max-width: 468px) {
+  .about__card:nth-child(2)::after, .about__card:nth-child(3)::after {
+    top: 50px;
+  }
+}
+.about__card:nth-child(1)::before, .about__card:nth-child(2)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: calc(50% - 60px);
+  height: 1px;
+  background-color: rgba(220, 233, 244, 0.8352941176);
+}
+@media (max-width: 468px) {
+  .about__card:nth-child(1)::before, .about__card:nth-child(2)::before {
+    top: 50px;
+  }
+}
+@media (max-width: 468px) {
+  .about__card {
+    padding: 10px;
+  }
 }
 .about__img {
   display: flex;
@@ -311,7 +346,6 @@ input[type=submit] {
   border: 1px solid rgba(220, 233, 244, 0.8352941176);
   width: 80px;
   height: 80px;
-  position: relative;
 }
 @media (max-width: 468px) {
   .about__img {
@@ -333,7 +367,6 @@ input[type=submit] {
 }
 .about__card-text {
   font-size: 16px;
-  line-height: 1.5;
   margin-bottom: 30px;
   color: rgb(2, 0, 0);
 }
