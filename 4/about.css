@@ -261,8 +261,8 @@ input[type=submit] {
   }
 }
 .about__line {
-  width: 10%;
   height: 3px;
+  width: 60px;
   background-color: rgb(2, 0, 0);
   margin-bottom: 30px;
 }
